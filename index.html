@@ -1,163 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lovisa Eklund</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lovisa Eklund</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       margin: 0;
-      padding: 40px;
-      background: #f8f6f3;
-      color: #222;
-      max-width: 700px;
-      margin: auto;
-    }
+      padding: 60px 20px;
+      background: #f8f6f3;
+      color: #222;
+      max-width: 720px;
+      margin: auto;
+    }
 
-h1 {
-  font-size: 48px;
-  letter-spacing: -0.5px;
-      margin-bottom: 5px;
-      font-weight: 600;
-    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 6px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
 
-    .subtitle {
-      color: #666;
-      margin-bottom: 30px;
-    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 15px;
+    }
 
-    h2 {
-      margin-top: 45px;
-      font-size: 20px;
-      font-weight: 500;
-    }
+    h2 {
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: 500;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 6px;
+    }
 
-    p {
-      line-height: 1.7;
-      color: #444;
-    }
+    p {
+      line-height: 1.8;
+      color: #444;
+    }
 
-    .section {
-      margin-top: 20px;
-    }
+    .section {
+      margin-top: 20px;
+    }
 
-    .card {
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 16px;
-      margin-top: 12px;
-    }
-    .card-title {
-      font-weight: 500;
-      margin-bottom: 5px;
-    }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 14px;
+      background: white;
+      transition: all 0.2s ease;
+    }
 
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
 
-    .muted {
-      color: #666;
-      font-size: 14px;
-    }
+    .card-title {
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
 
+    .muted {
+      color: #666;
+      font-size: 14px;
+    }
 
+    ul {
+      margin-top: 10px;
+    }
 
-a {
-  color: #7c3aed;
-}
+    li {
+      margin-bottom: 6px;
+      color: #444;
+    }
 
+    a {
+      color: #7c3aed;
+      text-decoration: none;
+    }
 
+    a:hover {
+      text-decoration: underline;
+    }
 
-    footer {
-      margin-top: 60px;
-      font-size: 13px;
-      color: #888;
-    }
-  </style>
+    footer {
+      margin-top: 70px;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
 </head>
-
 
 <body>
 
+  <h1>Lovisa Eklund</h1>
+  <div class="subtitle">Modeling complex systems · Power grids · Ideas</div>
 
-  <h1>Lovisa Eklund</h1>
-  <div class="subtitle">Modeling complex systems· Ideas.</div>
+  <div class="section">
+    <p>
+      I’m interested in how complex systems behave — and how much of them we can actually understand.
+    </p>
 
+    <p>
+      My work focuses on system identification and power system dynamics, with an emphasis on nonlinear behavior in generators and large-scale energy systems.
+    </p>
 
-  <div class="section">
-    <p>
-      I work on understanding complex systems — how they behave, how we model them, 
-      and where models break down.
-    </p>
+    <p>
+      Alongside research, I write as a way of thinking — about models, uncertainty, and the limits of what we can capture mathematically.
+    </p>
+  </div>
 
+  <h2>Research</h2>
 
-    <p>
-      My research focuses on hydropower and power system dynamics.
-    </p>
-
-
-    <p>
-      Alongside this, I write — mostly to think. About modeling, uncertainty, and how technical systems interact with the real world.
-    </p>
-  </div>
-
-
-  <h2>Research</h2>
-
-
-  <div class="card">
-    <div class="card-title">System Identification of Swing Dynamics</div>
-    <div class="muted">
-      Estimating inertia and damping in nonlinear power system models, with focus on realistic disturbances and measurement noise.
+  <div class="card">
+    <div class="card-title">System Identification of Swing Dynamics</div>
+    <div class="muted">
+      Estimating inertia and damping in nonlinear power system models using realistic disturbance data.
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">Nonlinear Modeling in Power Systems</div>
-    <div class="muted">
-      Exploring limitations of linear approximations and developing identification approaches for strongly nonlinear dynamics.
-    </div>
-  </div>
+  <div class="card">
+    <div class="card-title">Nonlinear Modeling in Power Systems</div>
+    <div class="muted">
+      Investigating where linear approximations fail and how to model strongly nonlinear dynamics.
+    </div>
+  </div>
 
-  <h2>Projects</h2>
+  <h2>Projects</h2>
 
-  <div class="card">
-    <div class="card-title">Hydropower System Modeling</div>
-    <div class="muted">
-      Simulation and modeling of turbine and generator behavior for stability and control analysis.
-    </div>
-  </div>
+  <div class="card">
+    <div class="card-title">Hydropower System Modeling</div>
+    <div class="muted">
+      Modeling turbine and generator behavior for stability and control analysis.
+    </div>
+  </div>
 
-  <div class="card">
-    <div class="card-title">System Identification Experiments</div>
-    <div class="muted">
-      Working with real and synthetic data to estimate dynamic parameters under noise and uncertainty.
-    </div>
-  </div>
+  <div class="card">
+    <div class="card-title">System Identification Experiments</div>
+    <div class="muted">
+      Parameter estimation from noisy measurement data in dynamic systems.
+    </div>
+  </div>
 
-  <h2>Writing</h2>
+  <h2>Writing</h2>
 
-  <div class="section">
-    <p>
-      I write to explore questions like:
-    </p>
+  <div class="section">
+    <p>I write around questions like:</p>
 
-    <ul>
-      <li>What does it mean to model reality?</li>
-      <li>How much of a system can we actually identify?</li>
-      <li>When does a model stop being useful?</li>
-    </ul>
+    <ul>
+      <li>What does it mean to model reality?</li>
+      <li>How much of a system can we identify?</li>
+      <li>Where do models stop being useful?</li>
+    </ul>
 
-    <p class="muted">(Texts coming soon)</p>
-  </div>
+    <p class="muted">(Texts coming soon)</p>
+  </div>
 
-  <h2>Contact</h2>
-  <p>
-    GitHub: #link</a><br/>
-    Email: <a href="#">link</a>
-  </p>
+  <h2>Contact</h2>
+  <p>
+    GitHub: #link</a><br/>
+    Email: <a href="#">link</a>
+  </p>
 
-  <footer>
-    © 2026 Lovisa Eklund
-  </footer>
+  <footer>
+    © 2026 Lovisa Eklund
+  </footer>
 
 </body>
+</html>
